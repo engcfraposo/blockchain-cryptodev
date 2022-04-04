@@ -29,9 +29,6 @@ module.exports = class Blockchain {
             if(currentBlock.previousHash !== previousBlock.hash){
                 return false;
             }
-            if(!hash.startWith("0") && !previousHash.startWith("0") && hash.length !== previousHash.length){
-                return false;
-            }
         }
         return true;
     }
